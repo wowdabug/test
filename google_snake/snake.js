@@ -8641,8 +8641,8 @@ this._s = this._s || {};
           ? (mSz(
               a.qb,
               a.settings.Ca === 1
-                ? "https://www.wowdabug.github.io/test/google_snake/img/pixel/v17/px_count_03.png"
-                : "https://www.wowdabug.github.io/test/google_snake/img/v17/count_03.png"
+                ? "https://www.google.com/logos/fnbx/snake_arcade/pixel/v17/px_count_03.png"
+                : "https://www.google.com/logos/fnbx/snake_arcade/v17/count_03.png"
             ),
             _.zl.remove(a.qb, "LaTyvd"))
           : _.zl.add(a.qb, "LaTyvd");
@@ -8873,7 +8873,7 @@ this._s = this._s || {};
           b.appendChild(a),
           mSz(
             a,
-            "https://www.wowdabug.github.io/test/google_snake/img/v4/size_01.png"
+            "https://www.google.com/logos/fnbx/snake_arcade/v4/size_01.png"
           ),
           _.zl.add(a, "fbftZe"));
         if (b.children.length >= 5)
@@ -9105,7 +9105,7 @@ this._s = this._s || {};
                     ia.children[4] instanceof HTMLImageElement &&
                     mSz(
                       ia.children[4],
-                      "https://www.wowdabug.github.io/test/google_snake/img/halloween/default_jackolantern.png"
+                      "https://www.google.com/logos/fnbx/snake_arcade/halloween/default_jackolantern.png"
                     );
                   break;
                 }
@@ -9583,8 +9583,8 @@ this._s = this._s || {};
             ? mSz(
                 a.Ea,
                 a.settings.Ca === 1
-                  ? "https://www.wowdabug.github.io/test/google_snake/img/pixel/px_dc_trophy.png"
-                  : "https://www.wowdabug.github.io/test/google_snake/img/dc_trophy.png"
+                  ? "https://www.google.com/logos/fnbx/snake_arcade/pixel/px_dc_trophy.png"
+                  : "https://www.google.com/logos/fnbx/snake_arcade/dc_trophy.png"
               )
             : a.settings.qc !== "" && mSz(a.Ea, a.settings.qc);
           a = this.Eb.Aa;
