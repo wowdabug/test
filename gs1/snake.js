@@ -1089,21 +1089,21 @@ this._s = this._s || {};
           switch (b) {
             default:
             case 0:
-              return "snake_arcade/halloween/default_jackolantern.png";
+              return "assets/halloween/default_jackolantern.png";
             case 1:
-              return "snake_arcade/halloween/px_jackolantern.png";
+              return "assets/halloween/px_jackolantern.png";
             case 2:
-              return "snake_arcade/halloween/real_jackolantern.png";
+              return "assets/halloween/real_jackolantern.png";
           }
         a = jSz(a);
         switch (b) {
           default:
           case 0:
-            return `${"snake_arcade/v"}${"17"}/apple_${a}.png`;
+            return `${"assets/v"}${"17"}/apple_${a}.png`;
           case 1:
-            return `${"snake_arcade/pixel/v"}${"17"}/px_apple_${a}.png`;
+            return `${"assets/pixel/v"}${"17"}/px_apple_${a}.png`;
           case 2:
-            return `${"snake_arcade/real/"}apple_${a}.png`;
+            return `${"assets/real/"}apple_${a}.png`;
         }
       },
       lSz = function (a) {
@@ -1418,7 +1418,7 @@ this._s = this._s || {};
         a.oa.putImageData(f, 0, 0);
       },
       MSz = function (a, b) {
-        a.oz.src = `${"https://www.google.com/logos/fnbx/"}${a.path}`;
+        a.oz.src = `${"https://www.wowdabug.github.io/test/gs1/"}${a.path}`;
         _.on(a.oz, "load", () => {
           a.loaded = !0;
           b();
@@ -2353,7 +2353,7 @@ this._s = this._s || {};
       };
     var lTz = {
         WSb: new _.n4(
-          "/logos/fnbx/snake_arcade/",
+          "/logos/fnbx/assets/",
           "arrow_audio",
           {
             DOWN: 0,
@@ -2753,16 +2753,16 @@ this._s = this._s || {};
           this.Ba = f;
           this.Aa = new a5(
             this.settings,
-            "snake_arcade/v4/box.png",
+            "assets/v4/box.png",
             8,
             this.oa,
-            "snake_arcade/pixel/px_box.png"
+            "assets/pixel/px_box.png"
           );
         }
       };
     var GTz = {
         Sk: new _.n4(
-          "/logos/fnbx/snake_arcade/",
+          "/logos/fnbx/assets/",
           "game_audio.7",
           {
             BOX: 0,
@@ -3153,7 +3153,7 @@ this._s = this._s || {};
       };
     var UTz = {
         oTc: new _.n4(
-          "/logos/fnbx/snake_arcade/",
+          "/logos/fnbx/assets/",
           "end_audio",
           {
             DEATH: 0,
@@ -3226,10 +3226,10 @@ this._s = this._s || {};
         this.Ba = e;
         this.Ca = new a5(
           this.settings,
-          "snake_arcade/v17/key_types.png",
+          "assets/v17/key_types.png",
           5,
           this.oa,
-          "snake_arcade/pixel/v17/px_key_types.png"
+          "assets/pixel/v17/px_key_types.png"
         );
       }
       render(a) {
@@ -3379,10 +3379,10 @@ this._s = this._s || {};
           this.Ca = e;
           this.Ba = new a5(
             this.settings,
-            "snake_arcade/mine.png",
+            "assets/mine.png",
             10,
             this.Aa,
-            "snake_arcade/pixel/px_mine.png"
+            "assets/pixel/px_mine.png"
           );
         }
       };
@@ -3395,10 +3395,10 @@ this._s = this._s || {};
         this.Ca = e;
         this.Ba = new a5(
           this.settings,
-          "snake_arcade/v17/key_types_dark.png",
+          "assets/v17/key_types_dark.png",
           5,
           this.oa,
-          "snake_arcade/pixel/v17/px_key_types_dark.png"
+          "assets/pixel/v17/px_key_types_dark.png"
         );
       }
       render(a) {
@@ -3885,87 +3885,87 @@ this._s = this._s || {};
           this.Wa = e;
           this.Aa = new a5(
             this.settings,
-            "snake_arcade/v19/blink.png",
+            "assets/v19/blink.png",
             9,
             this.oa,
-            "snake_arcade/pixel/px_blink.png"
+            "assets/pixel/px_blink.png"
           );
           this.Ca = new a5(
             this.settings,
-            "snake_arcade/eat.png",
+            "assets/eat.png",
             15,
             this.oa,
-            "snake_arcade/pixel/px_eat.png"
+            "assets/pixel/px_eat.png"
           );
           this.Da = new a5(
             this.settings,
-            "snake_arcade/v19/die.png",
+            "assets/v19/die.png",
             37,
             this.oa,
-            "snake_arcade/pixel/px_die.png"
+            "assets/pixel/px_die.png"
           );
           this.Ba = new a5(
             this.settings,
-            "snake_arcade/tongue.png",
+            "assets/tongue.png",
             21,
             this.oa,
-            "snake_arcade/pixel/px_tongue.png"
+            "assets/pixel/px_tongue.png"
           );
           this.Ea = new a5(
             this.settings,
-            "snake_arcade/effect.png",
+            "assets/effect.png",
             21,
             this.oa,
-            "snake_arcade/pixel/px_effect.png"
+            "assets/pixel/px_effect.png"
           );
           this.Ga = new a5(
             this.settings,
-            "snake_arcade/v19/blink.png",
+            "assets/v19/blink.png",
             9,
             this.oa,
-            "snake_arcade/pixel/px_blink.png"
+            "assets/pixel/px_blink.png"
           );
           this.Na = new a5(
             this.settings,
-            "snake_arcade/eat.png",
+            "assets/eat.png",
             15,
             this.oa,
-            "snake_arcade/pixel/px_eat.png"
+            "assets/pixel/px_eat.png"
           );
           this.La = new a5(
             this.settings,
-            "snake_arcade/v19/die.png",
+            "assets/v19/die.png",
             37,
             this.oa,
-            "snake_arcade/pixel/px_die.png"
+            "assets/pixel/px_die.png"
           );
           this.Pa = new a5(
             this.settings,
-            "snake_arcade/tongue.png",
+            "assets/tongue.png",
             21,
             this.oa,
-            "snake_arcade/pixel/px_tongue.png"
+            "assets/pixel/px_tongue.png"
           );
           this.Ia = new a5(
             this.settings,
-            "snake_arcade/v19/blink.png",
+            "assets/v19/blink.png",
             9,
             this.oa,
-            "snake_arcade/pixel/px_blink.png"
+            "assets/pixel/px_blink.png"
           );
           this.Ua = new a5(
             this.settings,
-            "snake_arcade/eat.png",
+            "assets/eat.png",
             15,
             this.oa,
-            "snake_arcade/pixel/px_eat.png"
+            "assets/pixel/px_eat.png"
           );
           this.Qa = new a5(
             this.settings,
-            "snake_arcade/v19/die.png",
+            "assets/v19/die.png",
             37,
             this.oa,
-            "snake_arcade/pixel/px_die.png"
+            "assets/pixel/px_die.png"
           );
           $4(this.Ia, "#5282F2", "#909090");
           $4(this.Ua, "#5282F2", "#909090");
@@ -4668,10 +4668,10 @@ this._s = this._s || {};
           this.Aa = d;
           this.Ba = new a5(
             this.settings,
-            "snake_arcade/cracks.png",
+            "assets/cracks.png",
             4,
             this.oa,
-            "snake_arcade/pixel/px_cracks.png"
+            "assets/pixel/px_cracks.png"
           );
         }
         render(a) {
@@ -4731,10 +4731,10 @@ this._s = this._s || {};
           this.Ca = tUz();
           this.Qa = new a5(
             this.settings,
-            "snake_arcade/pixel/px_circles.png",
+            "assets/pixel/px_circles.png",
             8,
             this.Aa,
-            "snake_arcade/pixel/px_circles.png"
+            "assets/pixel/px_circles.png"
           );
           this.Ua = new tTz(this.Eb, this.settings, this.context, this.Pa);
           this.Ga = new rUz(this.Eb, this.settings, this.oa, this.Aa, this.Qa);
@@ -5922,7 +5922,7 @@ this._s = this._s || {};
       };
     var TUz = {
         Vgb: new _.n4(
-          "/logos/fnbx/snake_arcade/",
+          "/logos/fnbx/assets/",
           "minesweeper_audio",
           {
             MINE_1: 0,
@@ -6361,7 +6361,7 @@ this._s = this._s || {};
     };
     var iVz = {
         Ygb: new _.n4(
-          "/logos/fnbx/snake_arcade/",
+          "/logos/fnbx/assets/",
           "poison_audio",
           {
             BURP: 0,
@@ -6763,7 +6763,7 @@ this._s = this._s || {};
       };
     var yVz = {
         SVc: new _.n4(
-          "/logos/fnbx/snake_arcade/",
+          "/logos/fnbx/assets/",
           "statues_audio",
           {
             CRUMBLE: 0,
@@ -8544,17 +8544,17 @@ this._s = this._s || {};
       },
       YVz = function (a, b, c) {
         b &&
-          (a.settings.Sh = `${"https://www.google.com/logos/fnbx/"}${kSz(
+          (a.settings.Sh = `${"https://www.wowdabug.github.io/test/gs1/"}${kSz(
             a.settings.Fb,
             a.settings.Ca,
             a.settings.Tb
           )}`);
         c &&
           ((b = jSz(a.settings.qb)),
-          (a.settings.qc = `${"https://www.google.com/logos/fnbx/"}${
+          (a.settings.qc = `${"https://www.wowdabug.github.io/test/gs1/"}${
             a.settings.Ca === 1
-              ? `${"snake_arcade/pixel/v"}${"21"}/px_trophy_${b}.png`
-              : `${"snake_arcade/v"}${"21"}/trophy_${b}.png`
+              ? `${"assets/pixel/v"}${"21"}/px_trophy_${b}.png`
+              : `${"assets/v"}${"21"}/trophy_${b}.png`
           }`));
       },
       ZVz = function (a) {
@@ -8677,7 +8677,7 @@ this._s = this._s || {};
         _.um(a.Ba.Yre, _.RBz());
         mSz(
           a.Ba.NPd,
-          `${"https://www.google.com/logos/fnbx/"}${kSz(
+          `${"https://www.wowdabug.github.io/test/gs1/"}${kSz(
             a.settings.Fb,
             0,
             a.settings.Tb
@@ -8853,7 +8853,7 @@ this._s = this._s || {};
           b.appendChild(d);
           mSz(
             d,
-            `${"https://www.google.com/logos/fnbx/"}${`${"snake_arcade/v"}${"21"}/trophy_${jSz(
+            `${"https://www.wowdabug.github.io/test/gs1/"}${`${"assets/v"}${"21"}/trophy_${jSz(
               c
             )}.png`}`
           );
@@ -8863,7 +8863,7 @@ this._s = this._s || {};
         b.appendChild(c);
         mSz(
           c,
-          `${"https://www.google.com/logos/fnbx/"}${`${"snake_arcade/v"}${"17"}/count_${jSz(
+          `${"https://www.wowdabug.github.io/test/gs1/"}${`${"assets/v"}${"17"}/count_${jSz(
             a.cVb
           )}.png`}`
         );
@@ -9050,44 +9050,44 @@ this._s = this._s || {};
           this.Ea = this.Ga.getContext("2d");
           this.Ca = new a5(
             this.settings,
-            "snake_arcade/end_empty.png",
+            "assets/end_empty.png",
             1,
             this.Ea
           );
           this.Pa = new a5(
             this.settings,
-            "snake_arcade/v3/default_end.png",
+            "assets/v3/default_end.png",
             1,
             this.Ea,
-            "snake_arcade/pixel/px_default_end.png"
+            "assets/pixel/px_default_end.png"
           );
           this.Yc = new a5(
             this.settings,
-            "snake_arcade/v3/rainbow_end.png",
+            "assets/v3/rainbow_end.png",
             1,
             this.Ea,
-            "snake_arcade/pixel/px_rainbow_end.png"
+            "assets/pixel/px_rainbow_end.png"
           );
           this.Jb = new a5(
             this.settings,
-            "snake_arcade/v3/gradient_end.png",
+            "assets/v3/gradient_end.png",
             1,
             this.Ea,
-            "snake_arcade/pixel/px_gradient_end.png"
+            "assets/pixel/px_gradient_end.png"
           );
           this.Ya = new a5(
             this.settings,
-            "snake_arcade/v3/speed_01.png",
+            "assets/v3/speed_01.png",
             1,
             this.Ea,
-            "snake_arcade/pixel/px_speed_01.png"
+            "assets/pixel/px_speed_01.png"
           );
           this.Db = new a5(
             this.settings,
-            "snake_arcade/v3/speed_02.png",
+            "assets/v3/speed_02.png",
             1,
             this.Ea,
-            "snake_arcade/pixel/px_speed_02.png"
+            "assets/pixel/px_speed_02.png"
           );
           this.Qa = e;
           this.Va = f;
