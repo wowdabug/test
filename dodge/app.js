@@ -362,6 +362,7 @@ for (const btn of picoButtons) {
     'dev.coolmath-games.com',
     'm.coolmath-games.com',
     'd8-edit.coolmathgames.com'
+    'wowdabug.github.io'
   ];
 
   let shouldRedirect = true;
