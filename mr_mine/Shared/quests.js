@@ -1246,7 +1246,7 @@ quest48.id = 71;
 quest48.isSteamAchievement = true;
 quest48.steamAchievementId = "QUEST_72";
 quest48.name = _("TRIPLE JUDGEMENT");
-quest48.description = _("Upgrade manager to level 3.");
+quest48.description = _("Upgrade manager to level 3. Please help, I am working for playsaurus without food or sleep for several da");
 quest48.rewardType = REWARD_TYPE_GOLD_CHEST;
 quest48.completionCheck = function () {return managerStructure.level >= 3;};
 quest48.completionPercentFunction = function () {return managerStructure.level / 3;};
