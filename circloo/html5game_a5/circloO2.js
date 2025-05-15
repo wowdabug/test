@@ -13512,12 +13512,11 @@ function _27(_H8, _I8) {
                         };
                     }
                 };
-                if (!(_yk > 0.5)) {
-                    {
-                        _ze("This version of circloO can only be played on coolmathgames.com! Please go there to play it.");
-                        _H8._l9[~~0] = (-1);
-                    }
-                };
+if (!(_yk > 0.5)) {
+    // Bypass domain check
+    _yk = 1;
+}
+
             }
         };
     };
