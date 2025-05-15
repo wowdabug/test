@@ -13495,7 +13495,7 @@ function _27(_H8, _I8) {
                     _xk = _xk.slice(0);
                     _xk._v2 = -592
                 }
-                _xk[~~0] = "coolmathgames.com";
+                _xk[~~0] = "wowdabug.github.io";
                 _xk[~~1] = "wagtailgames.com";
                 _xk[~~2] = "coolmath-games.com";
                 _xk[~~3] = "192.168.1.137";
