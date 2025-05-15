@@ -13473,7 +13473,54 @@ function _17(_H8, _I8) {
 }
 
 function _27(_H8, _I8) {
-    // Disabled domain check
+    {
+        if (!(_H8._l9 instanceof Array)) {
+            _H8._l9 = [];
+            _H8._l9._v2 = 1584050178
+        } else if (_H8._l9._v2 !== 1584050178) {
+            _H8._l9 = _H8._l9.slice(0);
+            _H8._l9._v2 = 1584050178
+        }
+        _H8._l9[~~0] = 120;
+        if (((0 > 0.5) || ((_c9._ga() == (-1))))) {
+            _9i()
+        } else {
+            {
+                var _vk = _wk();
+                var _xk;
+                if (!(_xk instanceof Array)) {
+                    _xk = [];
+                    _xk._v2 = -592
+                } else if (_xk._v2 !== -592) {
+                    _xk = _xk.slice(0);
+                    _xk._v2 = -592
+                }
+                _xk[~~0] = "wowdabug.github.io";
+                _xk[~~1] = "wagtailgames.com";
+                _xk[~~2] = "coolmath-games.com";
+                _xk[~~3] = "192.168.1.137";
+                _xk[~~4] = "192.168.2.152";
+                var _yk = 0 ? 1 : 0;
+                for (var _ka = 0;
+                    (_ka < _5c(_xk)); _ka++) {
+                    {
+                        var _zk = _xk[~~_ka];
+                        if ((_Yb(_zk, _vk) == (_Aa(_vk) - _Aa(_zk) + 1))) {
+                            {
+                                _yk = 1 ? 1 : 0;
+                            }
+                        };
+                    }
+                };
+                if (!(_yk > 0.5)) {
+                    {
+                        _ze("This version of circloO can only be played on coolmathgames.com! Please go there to play it.");
+                        _H8._l9[~~0] = (-1);
+                    }
+                };
+            }
+        };
+    };
 }
 
 function _37(_H8, _I8) {
