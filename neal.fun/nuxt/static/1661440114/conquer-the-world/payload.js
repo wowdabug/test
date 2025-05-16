@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/conquer-the-world",{data:[{}],fetch:{},mutations:[]});

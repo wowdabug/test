@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/draw-your-island",{data:[{}],fetch:{},mutations:[]});
