@@ -43,5 +43,16 @@
 
   <script defer src="Unity WebGL Player _ A Dance of Fire And Ice_files/htmlgame.js"></script>
   <script src="blob:https://html-classic.itch.zone/a5b0ba33-d5a8-4aaf-82e2-5404007772f1"></script>
+  <script>
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/adofaiii4.json");
+
+  // Force a resize after a brief delay
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 100); // slight delay to make sure the game is initialized
+  });
+</script>
+
 </body>
 </html>
