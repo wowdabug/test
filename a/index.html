@@ -43,16 +43,30 @@
 
   <script defer src="Unity WebGL Player _ A Dance of Fire And Ice_files/htmlgame.js"></script>
   <script src="blob:https://html-classic.itch.zone/a5b0ba33-d5a8-4aaf-82e2-5404007772f1"></script>
-  <script>
+<script>
   var gameInstance = UnityLoader.instantiate("gameContainer", "Build/adofaiii4.json");
 
-  // Force a resize after a brief delay
+  // Wait until canvas is available, then resize it manually
+  function resizeCanvasToFullScreen() {
+    const canvas = document.querySelector("#gameContainer canvas");
+    if (canvas) {
+      canvas.style.width = "100%";
+      canvas.style.height = "100%";
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    } else {
+      // Try again in 100ms if canvas isn't ready yet
+      setTimeout(resizeCanvasToFullScreen, 100);
+    }
+  }
+
   window.addEventListener("load", () => {
-    setTimeout(() => {
-      window.dispatchEvent(new Event('resize'));
-    }, 100); // slight delay to make sure the game is initialized
+    setTimeout(resizeCanvasToFullScreen, 100);
   });
+
+  window.addEventListener("resize", resizeCanvasToFullScreen);
 </script>
+
 
 </body>
 </html>
