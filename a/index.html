@@ -8,21 +8,20 @@
   </script>
   <script src="Unity WebGL Player _ A Dance of Fire And Ice_files/UnityLoader.js"></script>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      height: 100%;
-      width: 100%;
-    }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 
-    #gameContainer {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      background: rgb(35, 31, 32);
-    }
-
+#gameContainer {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #000;
+}
     canvas {
       width: 100% !important;
       height: 100% !important;
@@ -44,29 +43,29 @@
   <script defer src="Unity WebGL Player _ A Dance of Fire And Ice_files/htmlgame.js"></script>
   <script src="blob:https://html-classic.itch.zone/a5b0ba33-d5a8-4aaf-82e2-5404007772f1"></script>
 <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/adofaiii4.json");
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/adofaiii4.json", {
+    onProgress: function(gameInstance, progress) {
+      // Optional: show loading progress if needed
+    },
+    Module: {
+      onRuntimeInitialized: function() {
+        // Unity is ready — force proper canvas sizing
+        const canvas = document.querySelector("#gameContainer canvas");
+        if (canvas) {
+          function resize() {
+            canvas.style.width = "100%";
+            canvas.style.height = "100%";
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+          }
 
-  // Wait until canvas is available, then resize it manually
-  function resizeCanvasToFullScreen() {
-    const canvas = document.querySelector("#gameContainer canvas");
-    if (canvas) {
-      canvas.style.width = "100%";
-      canvas.style.height = "100%";
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    } else {
-      // Try again in 100ms if canvas isn't ready yet
-      setTimeout(resizeCanvasToFullScreen, 100);
+          resize(); // do it once now
+          window.addEventListener("resize", resize); // handle future resizes
+        }
+      }
     }
-  }
-
-  window.addEventListener("load", () => {
-    setTimeout(resizeCanvasToFullScreen, 100);
   });
-
-  window.addEventListener("resize", resizeCanvasToFullScreen);
 </script>
-
 
 </body>
 </html>
