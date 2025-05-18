@@ -31,6 +31,30 @@ html, body {
   </style>
 </head>
 <body>
+<div id="site-move-banner" style="
+  background: #1e1e1e;
+  color: #f0f0f0;
+  padding: 16px;
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+">
+  <span>If the game is broken, try resizing the screen
+  </span>
+  <button onclick="document.getElementById('site-move-banner').style.display='none'" 
+    style="
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      background: none;
+      border: none;
+      color: #aaa;
+      font-size: 20px;
+      cursor: pointer;
+  ">×</button>
+</div>
   <div id="gameContainer">
     <canvas id="canvas"></canvas>
     <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: url('data:image/png;base64,iVBORw0KGRK5CYII=') left center / cover no-repeat; width: 100%; height: 100%; display: inline-block;"></div>
@@ -42,30 +66,5 @@ html, body {
 
   <script defer src="Unity WebGL Player _ A Dance of Fire And Ice_files/htmlgame.js"></script>
   <script src="blob:https://html-classic.itch.zone/a5b0ba33-d5a8-4aaf-82e2-5404007772f1"></script>
-<script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/adofaiii4.json", {
-    onProgress: function(gameInstance, progress) {
-      // Optional: show loading progress if needed
-    },
-    Module: {
-      onRuntimeInitialized: function() {
-        // Unity is ready — force proper canvas sizing
-        const canvas = document.querySelector("#gameContainer canvas");
-        if (canvas) {
-          function resize() {
-            canvas.style.width = "100%";
-            canvas.style.height = "100%";
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-          }
-
-          resize(); // do it once now
-          window.addEventListener("resize", resize); // handle future resizes
-        }
-      }
-    }
-  });
-</script>
-
 </body>
 </html>
